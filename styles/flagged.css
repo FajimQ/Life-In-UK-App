@@ -1,0 +1,143 @@
+body{
+  width:100vw;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: sans-serif;
+  background-color: #F4F4F4;
+  position: relative;
+  min-height:100vh ;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+}
+
+nav{
+  position: fixed;
+  z-index: 1;
+  background-color: #4A9FFF;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem 0;
+}
+
+ul{
+  list-style:none;
+  display: flex;
+  flex-direction: row;
+  margin-left: 32px;
+  gap: 15px;
+}
+
+nav a{
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.questions {
+  background-color: #F4F4F4;
+  border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  overflow-x: auto;   /* scroll sideways */
+  overflow-y: hidden;
+  gap: 1rem;
+}
+
+.title h3:first-child {
+  flex: 1;                /* takes available space */
+  min-width: 0;           /* prevents forced expansion */
+  white-space: normal;    /* ✅ allow wrapping */
+  word-wrap: break-word;  /* ✅ breaks long words if needed */
+}
+
+.question-container {
+  position: relative;
+  flex: 1 1 auto;     /* prevent shrinking */
+  min-width: 250px;
+  max-width: 300px;   /* force enough width so scroll happens */
+  background-color: white;
+  padding: 10px;
+  border-radius: 30px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.question-container p{
+  background-color: rgb(2, 185, 2);
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.remove{
+  position: absolute;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 10px;
+  width: 5px;
+  height: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  right:0px;
+  top: -15px;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total{
+  font-size: 15px;
+  color: #a3a3a3;
+}
+
+.button-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz{
+  background-color: #4A9FFF;
+  border:none;
+  padding: 10px 12px;
+  color: white;
+  font-weight: 600;
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-left:auto;
+}
+
+.paragraph{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}

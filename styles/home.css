@@ -1,0 +1,218 @@
+body{
+  width:100vw;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: sans-serif;
+  background-color: #E3ECFF;
+  position: relative;
+  min-height:100vh ;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+  font-size: 18px;
+}
+
+nav{
+  position: fixed;
+  z-index: 1;
+  background-color: #4A9FFF;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem 0;
+}
+
+ul{
+  list-style:none;
+  display: flex;
+  flex-direction: row;
+  margin-left: 32px;
+  gap: 15px;
+}
+
+nav a{
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.container{
+  background-color: white;
+  padding: 12px 14px;
+  border-radius: 20px;
+}
+
+
+
+.topics-card, .lessons-card{
+  position: relative;
+  background-color: #375F81;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.lessons-card{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.empty-progress{
+  fill: none;
+  stroke: white;
+  stroke-width:10px;
+}
+
+.progress-line{
+  fill: none;
+  stroke-width: 12px;
+  stroke: #4A9FFF;
+  stroke-dasharray: 197.92 219.91%;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.3s ease;
+}
+
+.progress-value{
+  position: absolute;
+  right: 52px;
+  top: 58px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.content{
+  flex:1;
+}
+
+button{
+  background-color: #4A9FFF;
+  border: none;
+  padding: 4px 6px;
+  color: white;
+  border-radius: 20px;
+  width: 60px;
+  font-size: 12px;
+}
+
+.right-button,.left-button,.right-button2,.left-button2{
+  background-color: #4A9FFF;
+  color: white;
+  border-radius: 50%;
+  padding: 10px 10px;
+  border: none;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-weight: 700;
+  top: 50px;
+  opacity: 50%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.right-button:hover, .left-button:hover{
+  opacity: 100%;
+}
+
+.right-button,.right-button2{
+  right: -14px;
+}
+
+.left-button,.left-button2{
+  left: -14px;
+}
+
+.pagination, .pagination2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 7px;
+}
+
+.pagination div, .pagination2 div{
+  background-color: white;
+  height: 5px;
+  width: 5px;
+  border: none;
+  padding: 2px 2px;
+  margin-right: 7px;
+  border-radius: 50%;
+}
+
+.pagination .active, .pagination2 .active{
+  background-color: #4A9FFF;
+  height: 7px;
+  width: 7px;
+  padding: 4px 4px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.lessons-icon{
+  height: 80px;
+  width: 75px;
+  background-color: #4A9FFF;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.empty-progress2{
+  fill: none;
+  stroke: white;
+  stroke-width:10px;
+}
+
+.progress-line2{
+  fill: none;
+  stroke: #4A9FFF;
+  stroke-dasharray: 197.92 219.91%;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.3s ease;
+  stroke-width: 12px;
+}
+
+.progress-value2{
+  position: absolute;
+  top: 58px;
+  right: 55px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.all-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-decoration: none;
+}
+
+.icon, .icon2, .icon3{
+  background-color: #375F81;
+  height: 70px;
+  width: 65px;
+  border-radius: 10px;
+}
+
+.fade-in{
+  opacity: 1;
+}
+
+.fade-out{
+  opacity: 0;
+}
+
+.content{
+  transition: opacity 0.3s ease-in-out;
+}
+
+.lessons-content{
+  transition: opacity 0.3s ease-in-out;
+}
